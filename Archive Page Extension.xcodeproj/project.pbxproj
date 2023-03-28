@@ -109,12 +109,12 @@
 		25D79F4529C36AE1007959AF /* Archive Page Extension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Archive Page Extension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D79F4A29C36AE1007959AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D79F4B29C36AE1007959AF /* Archive Page.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Archive Page.entitlements"; sourceTree = "<group>"; };
-		25D79F6B29C36AE2007959AF /* copyright.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = copyright.txt; path = ../../copyright.txt; sourceTree = "<group>"; };
-		25D79F6C29C36AE2007959AF /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../background.js; sourceTree = "<group>"; };
-		25D79F6D29C36AE2007959AF /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../images; sourceTree = "<group>"; };
+		25D79F6B29C36AE2007959AF /* copyright.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
+		25D79F6C29C36AE2007959AF /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		25D79F6D29C36AE2007959AF /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		25D79F6F29C36AE2007959AF /*  */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ""; sourceTree = SOURCE_ROOT; };
-		25D79F7029C36AE2007959AF /* META-INF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "META-INF"; path = "../../META-INF"; sourceTree = "<group>"; };
-		25D79F7129C36AE2007959AF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../manifest.json; sourceTree = "<group>"; };
+		25D79F7029C36AE2007959AF /* META-INF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "META-INF"; sourceTree = "<group>"; };
+		25D79F7129C36AE2007959AF /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		25EB323D29C36EF500F7797E /* Archive Page Extension (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Archive Page Extension (iOS).entitlements"; sourceTree = "<group>"; };
 		25EB323E29C36F7400F7797E /* Archive Page (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Archive Page (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
