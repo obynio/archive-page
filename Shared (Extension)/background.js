@@ -8,40 +8,50 @@
 // For Firefox, options saved in local, not sync!
 
 const URLA = 'https://archive.today/?run=1&url='; // URL to invoke archive.today
-const URLS = 'https://archive.today/search/?q=' // URL to search archive.today
+const URLS = 'https://archive.today/search/?q=';// URL to search archive.today
 
 // Archive page URL
 function doArchivePage(uri, act) {
     console.log('doArchivePage act: ' + act); // DEBUG
     chrome.storage.local.get({ tabOption: 0 }, function(result) {
         console.log('tabOption: ' + result.tabOption); // DEBUG
-        switch (result.tabOption) {
-            case 1: // NEW TAB AT END
-                chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-                    chrome.tabs.create({
+        const URLB = encodeURIComponent(uri);
+        if (URLB == '')
+        {
+            chrome.tabs.update({
+            url: 'https://archive.today'
+            });
+            
+        }
+        else
+        {
+            switch (result.tabOption) {
+                case 1: // NEW TAB AT END
+                    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+                        chrome.tabs.create({
                         url: URLA + encodeURIComponent(uri),
                         index: 999, // CLAMPED TO END BY BROWSER
                         openerTabId: tabs[0].id,
                         active: act
+                        });
                     });
-                });
-                break;
-            case 2: // ACTIVE TAB
-                chrome.tabs.update({
+                    break;
+                case 2: // ACTIVE TAB
+                    chrome.tabs.update({
                     url: URLA + encodeURIComponent(uri)
-                });
-                break;
-            default: // NEW TAB ADJACENT
-                chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-                    chrome.tabs.create({
+                    });
+                    break;
+                default: // NEW TAB ADJACENT
+                    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+                        chrome.tabs.create({
                         url: URLA + encodeURIComponent(uri),
                         index: tabs[0].index + 1, // ADJACENT
                         openerTabId: tabs[0].id,
                         active: act
+                        });
                     });
-                });
-        }
-    });
+            }
+        }});
 }
 
 

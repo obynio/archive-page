@@ -6,7 +6,7 @@
     "storage",
     "tabs"
   ],
-  "version": "0.6.0",
+  "version": "1.004",
   "description": "Archive webpage with archive.today",
   "background": {
     "scripts": [
