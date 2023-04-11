@@ -2,6 +2,8 @@
   "name": "Archive Page",
   "author": "Original Extension by John Navas, ported by Gerald Normandin",
   "permissions": [
+    "https://*/*",
+    "http://*/*",
     "contextMenus",
     "storage",
     "tabs"
